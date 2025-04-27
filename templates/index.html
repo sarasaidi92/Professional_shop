@@ -1,6 +1,22 @@
 {% extends 'master.html' %}
 {% load static %}
 
+{% block styles %}
+
+    <style>
+        .bg-1 {
+            background-image: url({% static 'images/slider/1.jpg' %});
+        }
+
+        .bg-2 {
+            background-image: url({% static 'images/slider/2.jpg' %});
+        }
+
+        .bg-3 {
+            background-image: url({% static 'images/slider/3.jpg' %});
+        }
+    </style>
+{% endblock styles %}
 
 {% block content %}
 
