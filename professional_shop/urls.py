@@ -5,4 +5,5 @@ urlpatterns = [
     path('sara_log/', admin.site.urls),
     path('', include('main.urls')),
     path('listings/', include('listings.urls')),
+    path('profile/', include('users.urls')),
 ]
