@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7f4566d-bde6-404e-b9b3-77f7fe7aacbb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/signin_signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/colleague/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/professional_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/professional_shop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/professional_shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/professional_shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_partials/_bottom.header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_bottom.header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_partials/_head.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_partials/_top.header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_partials/_top.header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listing_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listing_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/signin_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/signin_signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
@@ -138,7 +139,10 @@
       <workItem from="1745650709753" duration="1939000" />
       <workItem from="1745731667526" duration="12268000" />
       <workItem from="1745744412387" duration="751000" />
-      <workItem from="1745818264635" duration="4091000" />
+      <workItem from="1745818264635" duration="7945000" />
+      <workItem from="1745904389281" duration="5448000" />
+      <workItem from="1746252583204" duration="2031000" />
+      <workItem from="1746335332856" duration="2655000" />
     </task>
     <servers />
   </component>

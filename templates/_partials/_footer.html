@@ -14,7 +14,7 @@
                                 </div>
                                 <div class="shipping-text">
                                     <h2>Free Delivery</h2>
-                                    <p>And free returns. See checkout for delivery dates.</p>
+                                    <p>{{ main.delivery |safe}}</p>
                                 </div>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="shipping-text">
                                     <h2>Safe Payment</h2>
-                                    <p>Pay with the world's most popular and secure payment methods.</p>
+                                    <p>{{ main.payment|safe}}</p>
                                 </div>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="shipping-text">
                                     <h2>Shop with Confidence</h2>
-                                    <p>Our Buyer Protection covers your purchasefrom click to delivery.</p>
+                                    <p>{{ main.confidence|safe}}</p>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="shipping-text">
                                     <h2>24/7 Help Center</h2>
-                                    <p>Have a question? Call a Specialist or chat online.</p>
+                                    <p>{{ main.help|safe}}</p>
                                 </div>
                             </div>
                         </div>
@@ -126,28 +126,37 @@
                                 <h3 class="footer-block-title">Follow Us</h3>
                                 <ul class="social-link">
                                     <li class="twitter">
-                                        <a href="https://twitter.com/" data-toggle="tooltip" target="_blank"
+                                        {% if main.twitter %}
+                                        <a href="{{ main.twitter}}" data-toggle="tooltip" target="_blank"
                                            title="Twitter">
                                             <i class="fa fa-twitter"></i>
                                         </a>
+                                        {% endif %}
                                     </li>
                                     <li class="facebook">
-                                        <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank"
+                                        {% if main.facebook %}
+                                        <a href="{{ main.facebook}}" data-toggle="tooltip" target="_blank"
                                            title="Facebook">
                                             <i class="fa fa-facebook"></i>
                                         </a>
+                                        {% endif %}
                                     </li>
                                     <li class="youtube">
-                                        <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank"
+                                        {% if main.youtube %}
+                                        <a href="{{ main.youtube}}" data-toggle="tooltip" target="_blank"
                                            title="Youtube">
                                             <i class="fa fa-youtube"></i>
                                         </a>
+                                        {% endif %}
                                     </li>
                                     <li class="instagram">
-                                        <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank"
+                                        {% if main.instagram %}
+                                        <a href="{{ main.instagram}}" data-toggle="tooltip" target="_blank"
                                            title="Instagram">
                                             <i class="fa fa-instagram"></i>
-                                        </a>
+                                        </a>	
+                                        {% endif %} 
+                                        
                                     </li>
                                 </ul>
                             </div>
@@ -213,7 +222,7 @@
                         <!-- Footer Payment Area End Here -->
                         <!-- Begin Copyright Area -->
                         <div class="copyright text-center pt-25">
-                            <span><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></span>
+                            <span><a target="_blank" href="https://www.templateshub.net">{{ main.footer|safe}}</a></span>
                         </div>
                         <!-- Copyright Area End Here -->
                     </div>

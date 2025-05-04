@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'listings.apps.ListingsConfig',
     'users.apps.UsersConfig',
+    'colleague.apps.ColleagueConfig',
 ]
 
 MIDDLEWARE = [
