@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 
     'ckeditor',
 
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'users.apps.UsersConfig',
     'colleague.apps.ColleagueConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [

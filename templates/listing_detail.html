@@ -1,5 +1,6 @@
 {% extends 'master.html' %}
 {% load static %}
+{% load humanize %}
 
 {% block content %}
     <!-- Begin Li's Breadcrumb Area -->
@@ -62,7 +63,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="product-details-view-content sp-normal-content pt-60">
                         <div class="product-info">
-                            <h2>Today is a good day Framed poster</h2>
+                            <h2>{{ listing.title}}</h2>
                             <span class="product-details-ref">Reference: demo_15</span>
                             <div class="rating-box pt-20">
                                 <ul class="rating rating-with-review-item">
@@ -76,11 +77,11 @@
                                 </ul>
                             </div>
                             <div class="price-box pt-20">
-                                <span class="new-price new-price-2">$57.98</span>
+                                <span class="new-price new-price-2">$ {{listing.price | intcomma}}</span>
                             </div>
                             <div class="product-desc">
                                 <p>
-                                            <span>100% cotton double printed dress. Black and white striped top and orange high waisted skater skirt bottom. Lorem ipsum dolor sit amet, consectetur adipisicing elit. quibusdam corporis, earum facilis et nostrum dolorum accusamus similique eveniet quia pariatur.
+                                            <span>{{ listing.text|safe}}
                                             </span>
                                 </p>
                             </div>
@@ -100,11 +101,9 @@
                             <div class="product-additional-info">
                                 <div class="product-social-sharing">
                                     <ul>
-                                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                        <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i>Google
-                                            +</a></li>
-                                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i>{{ listing.facebook }}</a></li>
+                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i>{{ listing.twitter }}</a></li>
+                                        <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>{{ listing.instagram }}</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -135,7 +134,7 @@
             <div class="tab-content">
                 <div id="description" class="tab-pane active show" role="tabpanel">
                     <div class="product-description">
-                        <span>The best is yet to come! Give your walls a voice with a framed poster. This aesthethic, optimistic poster will look great in your desk or in an open-space office. Painted wooden frame with passe-partout for more depth.</span>
+                        <span>{{ listing.text|safe}}</span>
                     </div>
                 </div>
                 <div id="product-details" class="tab-pane" role="tabpanel">
